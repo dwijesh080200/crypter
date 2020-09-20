@@ -1,0 +1,10 @@
+[Unit]
+Description=my crypt service
+After=network.target
+
+[Service]
+ExecStart=/home/user/crypter-decrypter/script/crypt.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
